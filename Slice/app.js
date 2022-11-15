@@ -3,8 +3,8 @@ function showName(){
     var value = input.value;
 
     
-    var result = value.slice(1,-2)
-
+    var result = value.slice(-3)
+    result = result.slice(0,1)
     if (result==1) {
         document.getElementById('demo').innerHTML = value
         document.getElementById('demo').style.color = 'yellow'
